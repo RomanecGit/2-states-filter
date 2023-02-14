@@ -62,7 +62,7 @@ function Portfolio(props) {
 
     //фильтрую проекты, оставляя только нужную категорию (или все)
     const selected_projects = projects.filter((project)=>{
-        return selected=="All" || project.category == selected;
+        return selected==="All" || project.category === selected;
     });
 
     return (
